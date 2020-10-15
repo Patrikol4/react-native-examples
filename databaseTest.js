@@ -9,8 +9,9 @@ export class databaseTest extends React.Component
 
 writeUserData(email,fname,lname){
   firebase.database().ref('users/').push({
+    
     email,
-    name,
+    nome,
   }).then((data)=>{
     console.tron.log('data ' , data)
   }).catch((error)=>{
