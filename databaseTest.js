@@ -8,7 +8,7 @@ import database from '@firebase/database';
 export class databaseTest extends React.Component
 
 writeUserData(email,fname,lname){
-  firebase.database().ref('UsersList/').push({
+  firebase.database().ref('users/').push({
     email,
     name,
   }).then((data)=>{
