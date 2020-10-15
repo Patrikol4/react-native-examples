@@ -1,3 +1,5 @@
+// aula 2 do curso firebase firestore do net ninja
+
 var firebaseConfig = {
     apiKey: "AIzaSyC0MfRBvmCa7ZjDhn6lh633mgW4HPcpEmQ",
     authDomain: "demonstracao-firebase-ap-ea625.firebaseapp.com",
@@ -11,4 +13,4 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore()
-db.settings(timestampsInSnapshots: true)
+db.settings({timestampsInSnapshots: true})
